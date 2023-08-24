@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 /*
     Print a square with the character #
     
@@ -15,7 +14,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-size = parseInt(process.argv[2], 10)
+size = parseInt(process.argv[2], 10)  // using 10 to convert to decimal instead of hex
 
 for (let i = 0 ; i < size ; i ++) {
     for (let j = 0 ; j < size ; j ++) {
@@ -23,4 +22,3 @@ for (let i = 0 ; i < size ; i ++) {
     }
     process.stdout.write("\n");
 }
-
